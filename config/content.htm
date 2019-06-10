@@ -1,25 +1,4 @@
-<h1>各組期末報告說明</h1>
-<p></p>
-<p>本網站倉儲: <a href="https://github.com/scrum-1/wcm2019a">https://github.com/scrum-1/wcm2019a</a></p>
-<p>請各組在各自的網站中將期中之前的 content.htm 各 H 標註各自加 1 後內縮在本頁最後一個頁面, 並將標題設為" 期中報告"</p>
-<p>各組組員請依照各頁面主題, 分別利用各自帳號下的 CMSimfly, Reveal 與 Pelican (Blogger) 內容, 引用至各相關頁面外, 再分別依據各頁面所執行的操作內容, 拍成影音說明影片, 以"國立虎尾科技大學-機械設計工程系-網際內容管理-學號-影片主題"為名稱, 上傳到各自的 Youtube 帳號下後, 嵌入到下列各頁面中, 以作為期末課程評分依據.</p>
-<p>各學員將資料推送到各組網站時, 必須引用 Github 上版本提交號或連結, 並在影片內容中提供相關資料的說明與連結.</p>
-<p style="padding-left: 30px;">網路連線設定</p>
-<p style="padding-left: 30px;">配置可攜程式環境</p>
-<p style="padding-left: 30px;">倉儲改版</p>
-<p style="padding-left: 30px;">靜態 CMSimfly</p>
-<p style="padding-left: 30px;">Mobile 網站內容</p>
-<p style="padding-left: 30px;">Virtual Host</p>
-<h4>分組網站</h4>
-<p><br/><a href="https://github.com/mdewcm2019/wcm2019-task-g1">https://github.com/mdewcm2019/wcm2019-task-g1</a> </p>
-<p><a href="https://github.com/mdewcm2019/wcm2019-task-g2">https://github.com/mdewcm2019/wcm2019-task-g2</a> </p>
-<p><a href="https://github.com/mdewcm2019/wcm2019-task-g3">https://github.com/mdewcm2019/wcm2019-task-g3</a> </p>
-<p><a href="https://github.com/mdewcm2019/wcm2019-task-g4">https://github.com/mdewcm2019/wcm2019-task-g4</a> </p>
-<p><a href="https://github.com/mdewcm2019/wcm2019-task-g5">https://github.com/mdewcm2019/wcm2019-task-g5</a> </p>
-<p><a href="https://github.com/mdewcm2019/wcm2019-task-g6">https://github.com/mdewcm2019/wcm2019-task-g6</a> </p>
-<p><a href="https://github.com/mdewcm2019/wcm2019-task-g7">https://github.com/mdewcm2019/wcm2019-task-g7</a> </p>
-<h1>近端配置與管理</h1>
-<h2>網路連線設定</h2>
+<h1>近端配置與管理</h1><h2>網路連線設定</h2>
 <p>了解機械設計系電腦輔助設計室電腦的網路設定, 其中包括 IPv4 網路與 IPv6 網路設定.<br/><br/>正常情況下, 電腦輔助設計室中的 64 台電腦透過 IPv4 協定下的 DHCP 與 NAT 上網, 各電腦以 DHCP client 取得 192.168.1.* 的網路位址, 然後以 NAT 的一組外部 IP 上網, 通常必須設定 Proxy Server 為 http://proxy.kmol.info:3128 後上網會比較順暢, 但若 8 台 Proxy Servers 無法正常運作時, 則取消 Proxy Server 的設定.<br/><br/>瀏覽器代理主機設定<br/><br/>了解如何設定 Google Chrome 與 Firefox 瀏覽器的代理主機設定.<br/><br/>申請 Github 帳號<br/><br/>利用 Gmail 帳號申請 Github 帳號, 申請後利用電子郵箱收信進行確認後, 就可以在 Github 上建立倉儲.<br/><br/></p>
 <h2>配置可攜程式環境</h2>
 <p>取得 Windows 10 64 位元環境下的可攜程式環境 (下載  2019_cdb_w5.7z), 下載後解開目錄, 放入 USB3.0 規格以上的隨身碟或隨身硬碟.<br/><br/>以滑鼠點擊 start.bat 開啟可攜隨身系統, 以 stop.bat 關閉可攜隨身系統, 隨身碟必須在關閉所有應用程式執行下, 才可正常退出.<br/><br/>了解基本的 DOS (Disk Operating System) 指令<br/><br/>C:\&gt; 符號為 DOS 命令列視窗的回應 (Prompt), 表示目前在 C 槽硬碟的 \ 根目錄, 若要切換到 Y 槽, 則在電腦的回應後, 輸入 Y:, 命令列將轉為<br/><br/>Y:\&gt;<br/><br/>若要更換目錄, 則使用 cd, 也就是 change directory 的意思, 例如:<br/><br/>Y:\&gt;cd tmp<br/><br/>表示要從 Y 槽的根目錄更換到 tmp 目錄, 也就是<br/><br/>Y:\tmp&gt;<br/><br/>若要再回到 Y 槽的根目錄, 可以使用 cd ..<br/><br/>表示要從目前所在目錄, 往上跳回一個目錄, 也就是重新回到 Y 槽的根目錄.<br/><br/>另外, 無論目前位於哪一個子目錄, 也可以使用 cd \<br/><br/>直接回到根目錄.<br/><br/>或者從 Y:\&gt; 直接使用<br/><br/>cd \tmp\repo\ssh\wcm2019<br/><br/>直接從 Y 槽的根目錄, 跳進 Y:\tmp\repo\ssh\wcm2019&gt;<br/><br/>此外, 常用的 DOS 指令有:<br/><br/>dir - 列出目前所在目錄的內容<br/><br/>mkdir - 隨後加上要建立目錄的名稱, 可以建立目錄<br/><br/>cls - clear screen, 清除目前的命令列顯示的內容<br/><br/></p>
@@ -144,74 +123,5 @@ with open(filename, "w", encoding="utf-8") as f:
 <p><span>前端開發者必須讓網頁能在各種大小與規格的瀏覽裝置中, 正確且友善地顯示內容, 而後端開發者, 則專注於讓近端使用者能夠透過網際介面使用各種與機械設計流程相關的 CAD, CAE, CAM, PDM, 以及各種支援用的數位型錄等.</span></p>
 <p>參考 vdi:<br/><br/>位於雲端的 <a href="https://drive.google.com/file/d/1bSBdEPVn6IG22cVLpTbY97JY16vjlatz/view?usp=sharing">Ubuntu 18.04_201904.vdi</a> (約 9 GB) - 已經配置 Fossil SCM: https 5443, Host-only: 192.168.56.2, https: 443 and 8843 for CMSimfly, Squid Proxy Server.<br/><br/>假如要利用 USB 隨身碟存放上述約 9 GB 的 Ubuntu 18.04 vdi 檔案, 必須將隨身碟格式化為 NTFS, 若採 Fat32 格式, 最大單一檔案必須小於 4 GB.<br/><br/>另外在近端有一類似的檔案, 可提供上課學員下載:<br/><br/><a href="http://wcmg1.kmol.info:88/ub1804_nox.vdi">http://wcmg1.kmol.info:88/ub1804_nox.vdi</a> (僅限近端用戶使用 IPv6 協定者下載)</p>
 <p>Fossil SCM<br/><br/>如何利用 Fossil SCM, 在 Virtualbox 中的 Ubuntu 18.04-2 (8.5 GB) 建立類似 Github 的系統, 可以放入 CMSimfly 的靜態網頁<br/><br/>Ubuntu 18.04 (https://www.ubuntu.com/about/release-cycle), 配置網路連線, 然後架構 uwsgi 環境下的 CMSimfly 動態網站, 或建立 Fossil SCM 用來伺服管理 CMSimfly 下有版次管理的靜態網頁, 或利用 nginx 伺服無版次管理的 CMSimfly 靜態網頁.</p>
-<h1>期末報告</h1><h2>G1</h2>
-<p>http://github.com/s40723103/wcm2019a</p>
-<h2>G2</h2>
-<p><a href="https://github.com/s40723210/wcm2019a">https://github.com/s40723210/wcm2019a</a></p>
-<p>李承澤 40723210<span> </span></p>
-<p>張詠全 40723125 <span> </span></p>
-<p>廖豪樹 40723144<span> </span></p>
-<p>李其叡 40723111<span> </span></p>
-<p>王頊鑌 40723108<span> </span></p>
-<p>許鐸鐙 40426227<span> </span></p>
-<p>俆敬倫 40723124</p>
-<h2>G3</h2>
-<h4>組員:</h4>
-<p>40723137</p>
-<p>40723112</p>
-<p>40723110</p>
-<p>40723120</p>
-<p>40723119</p>
-<p>40723151</p>
-<p>40723134</p>
-<p></p>
-<h2>G4</h2>
-<h2>G5</h2>
-<p></p>
-<p><span>採用分組協同與全班 Github 協同倉儲模式執行期末專案, 各學員必須繳交在個別學員 Github 倉儲中的內容外, 各分組必須在分組倉儲中集合整理, 且將內容摘要到全班分組倉儲中.</span><br/><br/><span>各學員繳交供評分之內容: 個人倉儲 Github Pages 網站及 pdf 格式之期末報告.</span><br/><br/><span>各組繳交供評分之內容: 分組倉儲 Github Pages 網站及 pdf 格式之期末報告.</span><br/><br/><span>全班協同倉儲中的內容:全班倉儲 Github Pages 網站及 pdf 格式之期末報告.</span></p>
-<p>分組倉儲</p>
-<p><a href="https://github.com/mdewcm2019/wcm2019-task-g5">https://github.com/mdewcm2019/wcm2019-task-g5</a></p>
-<p>分組網頁</p>
-<p><a href="https://mdewcm2019.github.io/wcm2019-task-g5/content/index.html" rel="nofollow">https://mdewcm2019.github.io/wcm2019-task-g5/content/index.html</a></p>
-<p>分組blog</p>
-<p><a href="https://wcm2019-task-g5.blogspot.com/" rel="nofollow">https://wcm2019-task-g5.blogspot.com/</a></p>
-<p>=================================================================</p>
-<p>組長:</p>
-<p>40723122施東勝 </p>
-<p>組員:</p>
-<p>40723130陳彥旭 </p>
-<p>40723132陳乾豐 </p>
-<p>40723138黃奕慶<span>   <a href="https://github.com/s40723138/s40723138.github.io"><span>https://github.com/s40723138/s40723138.github</span>.io</a></span></p>
-<p>40723148鄭博鴻  <a href="https://github.com/s40723148/s40723148.github.io">https://github.com/s40723148/s40723148.github.io</a></p>
-<p>40723149鄭嘉文</p>
-<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 0495d54b8d4232ee29d54ee5c931474b7f72d3b1</p>
-<p></p><h2>G6</h2>
-=======
-<p>組員倉儲</p><h2>G6</h2>
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; dadfcbc5755e6befbb855a19c1f95b75b2c2cbde
-<p>組長：</p>
-<p>40623155  陳霖</p>
-<p>組員：</p>
-<p>40623153  廖祥祐</p>
-<p>40623156  林聖翰</p>
-<p>40623157  李昀霖</p><h2>G7</h2>
-<p>組長：</p>
-<p>40723135</p>
-<p>組員：</p>
-<p>40723121</p>
-<p>40723106</p>
-<p>40723107</p>
-<p>40723139</p>
-<p>40723140</p>
-<h2>Scrum2</h2>
-<p>http://github.com/scrum-2/wcm2019a</p><h2>分組 pdf 期末報告</h2>
-<p>各組該如何從分組網站或協同網站中的 htm 集合成最後版本的期末專題報告?</p>
-<p>各分頁的 html 轉為 markdown 後, 再加上格式設定後, 轉為 pdf 格式的分組期末報告.</p>
-<p><a href="https://github.com/showdownjs/showdown">https://github.com/showdownjs/showdown</a></p>
-<p><a href="https://pandoc.org/">https://pandoc.org/</a></p>
-<p>LaTeX: </p>
-<p><a href="https://miktex.org/">https://miktex.org/</a></p>
-<h1>期中報告</h1>
-<p>這裡將存放各學員或分組的期中報告相關內容</p>
-<p><a href="https://miktex.org/">https://miktex.org/</a></p>
-<p></p>
+<h1>Virtualbox</h1>
+<p><span>利用 <a href="https://download.virtualbox.org/virtualbox/6.0.8/VirtualBox-6.0.8-130520-Win.exe">Virtualbox</a> 建立虛擬 <a href="https://www.ubuntu.com/download/server/thank-you?version=18.04.2&amp;architecture=amd64">Ubuntu 18.04</a> 網際內容管理系統伺服主機:</span><br/><span><br/></span><span>1. 安裝最新版的 Virtualbox</span><br/><span>2. 建立 Ubuntu 18.04 虛擬主機</span><br/><span>3. 以網路卡橋接啟動 Ubuntu 伺服器</span><br/><span>4. 以 sudo apt install nginx 安裝 nginx WWW 伺服器</span><br/><span>5. 以 ifconfig 查 Ubuntu 伺服器的 IP, 測試 nginx 伺服器是否可以連線</span><br/><span>6. 以 Windows 10  下的 Filezilla client, 將編輯好的 nginx 設定檔案送到 Ubuntu</span><br/><span>7. 利用 Ubuntu 指令將設定檔案搬至設定位置後, 以 /etc/init.d/nginx restart 重新啟動 nginx</span><br/><span>8. 在 Ubuntu 中以 sudo apt install uwsgi 安裝 uwsgi</span><br/><span>9. 在 Windows 10 編輯 uwsgi 與 nginx 所需的設定檔案, 完成後以 filezilla 送至 Ubuntu.</span><br/><span>10. 將 CMSimfly 程式碼送到 Ubuntu 伺服器中對應目錄後.</span><br/><span>11. 在 Ubuntu 建立 cmsimfly 服務, 並設定隨機啟動.</span><br/><span>12. 完成後, 在 Windows 10 以瀏覽器連線至 CMSimfly, 確認動態網頁與靜態網頁可以在虛擬主機中正常啟動.</span></p>
