@@ -220,7 +220,8 @@ div <= input1 + html.BR() + input2 + html.BR() + input3
 '''
 doc['button'].bind('click',setgearnumber)
 </script>
-</p><h2>ROC Flag</h2>
+</p>
+<h2>ROC Flag</h2>
 <p><!-- 導入 Brython 標準程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
@@ -289,9 +290,10 @@ ctx.closePath()
 ctx.fillStyle = '#fff'
 ctx.fill()
 </script>
-</p><h1>近端配置與管理</h1>
+</p>
+<h1>近端配置與管理</h1>
 <h2>網路連線設定</h2>
-<p>了解機械設計系電腦輔助設計室電腦的網路設定, 其中包括 IPv4 網路與 IPv6 網路設定.<br/><br/>正常情況下, 電腦輔助設計室中的 64 台電腦透過 IPv4 協定下的 DHCP 與 NAT 上網, 各電腦以 DHCP client 取得 192.168.1.* 的網路位址, 然後以 NAT 的一組外部 IP 上網, 通常必須設定 Proxy Server 為 http://proxy.kmol.info:3128 後上網會比較順暢, 但若 8 台 Proxy Servers 無法正常運作時, 則取消 Proxy Server 的設定.<br/><br/>瀏覽器代理主機設定<br/><br/>了解如何設定 Google Chrome 與 Firefox 瀏覽器的代理主機設定.<br/><br/>申請 Github 帳號<br/><br/>利用 Gmail 帳號申請 Github 帳號, 申請後利用電子郵箱收信進行確認後, 就可以在 Github 上建立倉儲.<br/><br/></p>
+<p></p>
 <h2>配置可攜程式環境</h2>
 <p>取得 Windows 10 64 位元環境下的可攜程式環境 (下載  2019_cdb_w5.7z), 下載後解開目錄, 放入 USB3.0 規格以上的隨身碟或隨身硬碟.<br/><br/>以滑鼠點擊 start.bat 開啟可攜隨身系統, 以 stop.bat 關閉可攜隨身系統, 隨身碟必須在關閉所有應用程式執行下, 才可正常退出.<br/><br/>了解基本的 DOS (Disk Operating System) 指令<br/><br/>C:\&gt; 符號為 DOS 命令列視窗的回應 (Prompt), 表示目前在 C 槽硬碟的 \ 根目錄, 若要切換到 Y 槽, 則在電腦的回應後, 輸入 Y:, 命令列將轉為<br/><br/>Y:\&gt;<br/><br/>若要更換目錄, 則使用 cd, 也就是 change directory 的意思, 例如:<br/><br/>Y:\&gt;cd tmp<br/><br/>表示要從 Y 槽的根目錄更換到 tmp 目錄, 也就是<br/><br/>Y:\tmp&gt;<br/><br/>若要再回到 Y 槽的根目錄, 可以使用 cd ..<br/><br/>表示要從目前所在目錄, 往上跳回一個目錄, 也就是重新回到 Y 槽的根目錄.<br/><br/>另外, 無論目前位於哪一個子目錄, 也可以使用 cd \<br/><br/>直接回到根目錄.<br/><br/>或者從 Y:\&gt; 直接使用<br/><br/>cd \tmp\repo\ssh\wcm2019<br/><br/>直接從 Y 槽的根目錄, 跳進 Y:\tmp\repo\ssh\wcm2019&gt;<br/><br/>此外, 常用的 DOS 指令有:<br/><br/>dir - 列出目前所在目錄的內容<br/><br/>mkdir - 隨後加上要建立目錄的名稱, 可以建立目錄<br/><br/>cls - clear screen, 清除目前的命令列顯示的內容<br/><br/></p>
 <h1>倉儲改版</h1>
@@ -416,3 +418,8 @@ with open(filename, "w", encoding="utf-8") as f:
 <p>參考 vdi:<br/><br/>位於雲端的 <a href="https://drive.google.com/file/d/1bSBdEPVn6IG22cVLpTbY97JY16vjlatz/view?usp=sharing">Ubuntu 18.04_201904.vdi</a> (約 9 GB) - 已經配置 Fossil SCM: https 5443, Host-only: 192.168.56.2, https: 443 and 8843 for CMSimfly, Squid Proxy Server.<br/><br/>假如要利用 USB 隨身碟存放上述約 9 GB 的 Ubuntu 18.04 vdi 檔案, 必須將隨身碟格式化為 NTFS, 若採 Fat32 格式, 最大單一檔案必須小於 4 GB.<br/><br/>另外在近端有一類似的檔案, 可提供上課學員下載:<br/><br/><a href="http://wcmg1.kmol.info:88/ub1804_nox.vdi">http://wcmg1.kmol.info:88/ub1804_nox.vdi</a> (僅限近端用戶使用 IPv6 協定者下載)</p>
 <p>Fossil SCM<br/><br/>如何利用 Fossil SCM, 在 Virtualbox 中的 Ubuntu 18.04-2 (8.5 GB) 建立類似 Github 的系統, 可以放入 CMSimfly 的靜態網頁<br/><br/>Ubuntu 18.04 (https://www.ubuntu.com/about/release-cycle), 配置網路連線, 然後架構 uwsgi 環境下的 CMSimfly 動態網站, 或建立 Fossil SCM 用來伺服管理 CMSimfly 下有版次管理的靜態網頁, 或利用 nginx 伺服無版次管理的 CMSimfly 靜態網頁.</p>
 <h2>Virtualbox</h2>
+<p><span>利用 Virtualbox 建立虛擬 Ubuntu 18.04 網際內容管理系統伺服主機:</span><br/><span><br/></span><span>1. 安裝最新版的 <a href="https://download.virtualbox.org/virtualbox/6.0.8/VirtualBox-6.0.8-130520-Win.exe">Virtualbox</a></span><br/><span>2. 建立 <a href="https://www.ubuntu.com/download/server/thank-you?version=18.04.2&amp;architecture=amd64">Ubuntu 18.04</a> 虛擬主機</span><br/><span>3. 以網路卡橋接啟動 Ubuntu 伺服器</span><br/><span>4. 以 sudo apt install nginx 安裝 nginx WWW 伺服器</span><br/><span>5. 以 ifconfig 查 Ubuntu 伺服器的 IP, 測試 nginx 伺服器是否可以連線</span><br/><span>6. 以 Windows 10  下的 Filezilla client, 將編輯好的 nginx 設定檔案送到 Ubuntu</span><br/><span>7. 利用 Ubuntu 指令將設定檔案搬至設定位置後, 以 /etc/init.d/nginx restart 重新啟動 nginx</span><br/><span>8. 在 Ubuntu 中以 sudo apt install uwsgi 安裝 uwsgi</span><br/><span>9. 在 Windows 10 編輯 uwsgi 與 nginx 所需的設定檔案, 完成後以 filezilla 送至 Ubuntu.</span><br/><span>10. 將 CMSimfly 程式碼送到 Ubuntu 伺服器中對應目錄後.</span><br/><span>11. 在 Ubuntu 建立 cmsimfly 服務, 並設定隨機啟動.</span><br/><span>12. 完成後, 在 Windows 10 以瀏覽器連線至 CMSimfly, 確認動態網頁與靜態網頁可以在虛擬主機中正常啟動.</span></p>
+<h1>期末</h1>
+<h2>網路連線設定練習</h2>
+<iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/a4ZainrqBM4" width="560"></iframe><h2>Ubuntu 安裝練習</h2>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/t3K-Msj-5uA" width="560"></iframe></p>
